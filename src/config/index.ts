@@ -1,23 +1,22 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Ullas Basavapatna Chandrashekar — Software Engineer",
+  author: "Ullas Basavapatna Chandrashekar",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+    "Software Engineer and GWU Master's student skilled in data structures, algorithms, and system design, building scalable and performant web applications through impactful projects.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/ullas-small.jpg",
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "LinkedIn", href: "https://www.linkedin.com/in/ullasbc/" },
+    { text: "Github", href: "https://github.com/ullasbc02" },
+    { text: "Email", href: "mailto:ullasbc02@gmail.com" },
+    { text: "LeetCode", href: "https://leetcode.com/u/ullasbc/" },
   ],
   socialImage: "/zen-og.png",
   canonicalURL: "https://astro-zen.vercel.app",
@@ -25,73 +24,82 @@ export const SITE_CONFIG: SiteConfig = {
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "Ullas Basavapatna Chandrashekar",
+    specialty: "Software Engineer",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+      "Software Engineer and GWU Master's student skilled in data structures, algorithms, and system design, building scalable and performant web applications through impactful projects.",
+    email: "ullasbc02@gmail.com",
   },
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "Infosys",
+      position: "Systems Engineer",
+      startDate: "Aug 2022",
+      endDate: "Jun 2024",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        "Designed and deployed modular microservices tailored for Belgium and UEFA-specific features, enabling dynamic rollout across 6 European countries; managing 12+ region-based feature flags and accelerated time-to-market by 2 weeks per release",
+        "Developed internal developer tools and backend data validation scripts to streamline integration testing across ~30K simulated user sessions per environment; decreased pre-release QA overhead by 60+ engineering hours per cycle and improved sprint reliability",
+        "Refactored legacy configuration modules and environment properties for over 22 microservices, cutting manual intervention in release workflows; led to near-zero configuration mismatches and consistent rollout across 6 test beds, supporting ~1.2M weekly active users",
       ],
     },
     {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
+      company: "Transo",
+      position: "Software Intern",
+      startDate: "Aug 2021",
+      endDate: "Oct 2021",
       summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
+        "Built a real-time analytics dashboard for a logistics firm, integrating APIs to track 5,000+ daily shipments. Enabled deep insights into delivery status, driver scores, route efficiency, and inventory trends, cutting down transit delays by 18% through dynamic visualisations",
+        "Led R&D on carbon footprint reduction, developing a predictive ML model (accuracy: 0.87), analysing vehicle age and engine efficiency. Informed fleet upgrades cut CO₂ emissions by 200+ metric tons/year, equivalent to 50 delivery trucks",
       ],
-    },
-    {
-      company: "Driveer",
-      position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
-      summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
     },
   ],
   projects: [
     {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/spotifu.png",
+      name: "Catg Programming Language",
+      summary: "Collaborating first-class functions and list operations in an imperative style. Built a full compiler pipeline (lexer, parser, runtime) and ran 100+ test programs, reducing code verbosity by ~30% for functional-style tasks",
+      //linkPreview: "/",
+      linkSource: "https://github.com/ullasbc02/catg",
+      image: "/catg.png",
     },
     {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/shopify-clon.png",
+      name: "Multi-Client Text Chat System",
+      summary: "A chat application supporting multiple clients and real-time messaging.",
+      //linkPreview: "/",
+      //linkSource: "https://github.com/immois/astro-zen",
+      image: "/multichat.jpg",
     },
     {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/clone-ig.png",
+      name: "MediMate",
+      summary: "Developing an AI-driven system analyses patient data to provide diagnostic suggestions, aimed at minimizing documentation time and boosting assessment accuracy by 10 – 15%",
+      //linkPreview: "/",
+      linkSource: "https://github.com/shrnik/medimate",
+      image: "/medimate.webp",
     },
+    {
+      name: "Design of Animal Intrusion Detection and Rescue System",
+      summary: "Developed an AI-driven system to detect and respond to animal intrusions in real-time, aimed at protecting wildlife and minimizing human-wildlife conflict.",
+      linkPreview: "https://ijsrset.com/home/issue/view/article.php?id=IJSRSET22991513",
+      linkSource: "https://github.com/ullasbc02/Yolo-custom-Object-detection-Animal-Class-",
+      image: "/animal.png",
+    },
+    {
+      name: "DevConnector",
+      summary: "Created a Social Network application for developers allows to create profiles, view and interact with other developers and post discussions. Used MongoDB indexing to optimise database search queries",
+      //linkPreview: "/",
+      //linkSource: "https://github.com/ullasbc02/Yolo-custom-Object-detection-Animal-Class-",
+      image: "/devConnector.png",
+    },
+
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
+      Hi, I’m Ullas Basavapatna Chandrashekar, a software developer and computer science graduate student at George Washington University, with a strong foundation in backend systems, compiler design, and full-stack development. Previously at Infosys, I contributed to telecom-scale microservice rollouts across 6 European regions, where I built internal tools and streamlined backend workflows that improved engineering efficiency and release consistency.
 
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+      My work spans a diverse tech stack—Java, Python, C++, React, Node.js, AWS—and includes projects such as developing a custom programming language, building a concurrent chat server, and deploying real-time analytics for logistics operations. I enjoy solving system-level problems, automating complex workflows, and building products that scale.
+
+      Currently, I’m looking for full-time opportunities in software engineering where I can apply my experience to build impactful products and grow alongside innovative teams.
     `,
-    image: "/alejandro-big.jpg",
+    image: "/ullas-big.jpg",
   },
 };
 
