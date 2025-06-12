@@ -1,10 +1,11 @@
-// @ts-check
+// astro.config.mjs
 import { defineConfig } from "astro/config";
-import tailwindcss from "@tailwindcss/vite";
+import tailwind from "@astrojs/tailwind";
+import github from "@astrojs/github";
 
 // https://astro.build/config
 export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()],
-  },
+  site: "https://ullasbc02.github.io/ullas-basavapatna-chandrashekar-online",
+  output: "static",
+  integrations: [tailwind(), github()],
 });
