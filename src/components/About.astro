@@ -1,4 +1,5 @@
 ---
+// src/components/about.astro
 import Section from "./Section.astro";
 import { Image } from "astro:assets";
 import type { AboutProps, HeroProps } from "@types";
@@ -10,10 +11,8 @@ const { description, image, name } = Astro.props;
 
 <Section text="About Me" href="about">
   <div class="flex flex-col items-center gap-12 md:flex-row md:gap-8">
-    <p class="w-auto text-base text-neutral md:pr-5">{description}</p>
-    <div
-      class="h-80 w-64 flex-shrink-0 rotate-[5deg] bg-white p-4 md:rotate-[7deg]"
-    >
+    <p class="w-auto text-base text-neutral md:pr-5 whitespace-pre-line">{description}</p>
+    <div class="h-80 w-64 flex-shrink-0 rotate-[5deg] bg-white p-4 md:rotate-[7deg]">
       <Image
         class="object-cover"
         src={image}
@@ -21,6 +20,34 @@ const { description, image, name } = Astro.props;
         height="260"
         alt={name}
       />
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="mt-12">
+    <h2 class="text-xl font-semibold text-foreground mb-4">Skills</h2>
+    <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 list-disc list-inside text-muted-foreground text-sm">
+      <li>Java, Python, C++, TypeScript, JavaScript</li>
+      <li>React, Node.js, Express, REST APIs</li>
+      <li>MongoDB, PostgreSQL, MySQL</li>
+      <li>AWS, Bash, Git, Docker</li>
+      <li>OOP, System Design, DSA</li>
+      <li>Machine Learning (CNN, YOLO, NLP)</li>
+    </ul>
+  </div>
+
+  <!-- Education Section -->
+  <div class="mt-12">
+    <h2 class="text-xl font-semibold text-foreground mb-4">Education</h2>
+    <div class="text-muted-foreground text-sm space-y-4">
+      <div>
+        <p class="font-semibold">M.S. in Computer Science</p>
+        <p>George Washington University, May 2026</p>
+      </div>
+      <div>
+        <p class="font-semibold">B.E. in Electronics & Communication</p>
+        <p>Visvesvaraya Technological University, July 2022</p>
+      </div>
     </div>
   </div>
 </Section>
