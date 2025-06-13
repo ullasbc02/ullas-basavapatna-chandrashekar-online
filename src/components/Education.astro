@@ -14,12 +14,12 @@ const { education } = Astro.props;
 ---
 
 <Section text="Education" href="education">
-  <div class="text-muted-foreground text-sm space-y-4">
+  <div class="text-neutral text-sm space-y-6 leading-relaxed">
     {
       education.map(({ degree, institution, graduation }) => (
         <div>
-          <p class="font-semibold">{degree}</p>
-          <p>{institution}, {graduation}</p>
+          <p class="font-semibold text-white">{degree}</p>
+          <p class="text-white/70">{institution}, {graduation}</p>
         </div>
       ))
     }

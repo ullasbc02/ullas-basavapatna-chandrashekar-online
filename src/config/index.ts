@@ -8,11 +8,11 @@ export const SITE_CONFIG: SiteConfig = {
   lang: "en",
   siteLogo: "/ullas-small.jpg",
   navLinks: [
+    { text: "Education", href: "#education" },
+    { text: "Skills", href: "#skills" },
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
-    { text: "Skills", href: "#skills" },
-    { text: "Education", href: "#education" },
   ],
   socialLinks: [
     { text: "LinkedIn", href: "https://www.linkedin.com/in/ullasbc/" },
