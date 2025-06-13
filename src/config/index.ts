@@ -107,9 +107,8 @@ export const SITE_CONTENT: SiteContent = {
     "Java", "Python", "C++", "TypeScript", "JavaScript",
     "React", "Node.js", "Express", "REST APIs",
     "MongoDB", "PostgreSQL", "MySQL",
-    "AWS", "Bash", "Git", "Docker",
+    "AWS", "Bash", "Git", "Linux",
     "System Design", "OOP", "DSA",
-    "Machine Learning (CNN, YOLO, NLP)"
   ],
   education: [
     {
