@@ -11,6 +11,8 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
+    { text: "Skills", href: "#skills" },
+    { text: "Education", href: "#education" },
   ],
   socialLinks: [
     { text: "LinkedIn", href: "https://www.linkedin.com/in/ullasbc/" },
