@@ -101,6 +101,26 @@ export const SITE_CONTENT: SiteContent = {
     `,
     image: "/ullas-big.jpg",
   },
+  skills: [
+    "Java", "Python", "C++", "TypeScript", "JavaScript",
+    "React", "Node.js", "Express", "REST APIs",
+    "MongoDB", "PostgreSQL", "MySQL",
+    "AWS", "Bash", "Git", "Docker",
+    "System Design", "OOP", "DSA",
+    "Machine Learning (CNN, YOLO, NLP)"
+  ],
+  education: [
+    {
+      degree: "M.S. in Computer Science",
+      institution: "George Washington University",
+      graduation: "May 2026",
+    },
+    {
+      degree: "B.E. in Electronics & Communication",
+      institution: "Visvesvaraya Technological University",
+      graduation: "July 2022",
+    }
+  ]
 };
 
 // #5755ff

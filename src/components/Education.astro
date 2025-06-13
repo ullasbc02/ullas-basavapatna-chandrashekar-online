@@ -1,0 +1,27 @@
+---
+// Education.astro
+import Section from "./Section.astro";
+
+interface Props {
+  education: {
+    degree: string;
+    institution: string;
+    graduation: string;
+  }[];
+}
+
+const { education } = Astro.props;
+---
+
+<Section text="Education" href="education">
+  <div class="text-muted-foreground text-sm space-y-4">
+    {
+      education.map(({ degree, institution, graduation }) => (
+        <div>
+          <p class="font-semibold">{degree}</p>
+          <p>{institution}, {graduation}</p>
+        </div>
+      ))
+    }
+  </div>
+</Section>

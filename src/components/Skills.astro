@@ -1,0 +1,18 @@
+---
+// Skills.astro
+import Section from "./Section.astro";
+
+interface Props {
+  skills: string[];
+}
+
+const { skills } = Astro.props;
+---
+
+<Section text="Skills" href="skills">
+  <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 list-disc list-inside text-muted-foreground text-sm">
+    {skills.map((skill) => (
+      <li>{skill}</li>
+    ))}
+  </ul>
+</Section>

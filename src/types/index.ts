@@ -13,7 +13,10 @@ export interface SiteContent {
   experience: ExperienceProps[];
   projects: ProjectProps[];
   about: AboutProps;
+  skills: string[];
+  education: EducationProps[];
 }
+
 
 export interface HeroProps {
   name: string;
@@ -47,3 +50,10 @@ export interface HeaderProps {
   siteLogo: string;
   navLinks: { text: string; href: string }[];
 }
+
+export interface EducationProps {
+  degree: string;
+  institution: string;
+  graduation: string;
+}
+
